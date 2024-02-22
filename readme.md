@@ -23,6 +23,9 @@ For any questions or feedback, please feel free to reach out:
 Email: thungong@thatwhy.me
 Website: https://apps.thatwhy.me
 
+## Version
+1.2.29
+
 ## Installation
 
 1. Clone this repository:
