@@ -13,7 +13,7 @@ VERSION = "1.2.29"
 CONTACT_INFO = """
 **Contact Information:**
 
-- Email: aeytato@thatwhy.me
+- Email: [mailme:aeytato@thatwhy.me] (aeytato@thatwhy.me)
 - Website: [https://apps.thatwhy.me](https://apps.thatwhy.me)
 """
 
