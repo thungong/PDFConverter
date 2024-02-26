@@ -25,6 +25,7 @@ Website: https://apps.thatwhy.me
 
 ## Version
 1.2.29
+1.3.01 count usage added
 
 ## Installation
 
