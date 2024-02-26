@@ -7,15 +7,19 @@ import tempfile
 import shutil
 
 # Version control
-VERSION = "1.2.29"
+VERSION = "1.3.01"
+# 1.3.01 is for counter usage
 
 # Contact information for the sidebar
 CONTACT_INFO = """
 **Contact Information:**
 
-- Email: [aeytato@thatwhy.me] (mailto:aeytato@thatwhy.me)
+- Email: thungong@thatwhy.me
 - Website: [https://apps.thatwhy.me](https://apps.thatwhy.me)
 """
+
+# Initialize usage counter
+usage_counter = 0
 
 def convert_pdf_to_csv(pdf_file):
     # Use tabula library to extract tables from PDF and convert to DataFrame
@@ -44,9 +48,12 @@ def convert_pdf_to_docx(pdf_file, output_docx):
         shutil.rmtree(temp_dir)
 
 def main():
+    global usage_counter
+    usage_counter += 1  # Increment usage counter
     st.sidebar.title("Aey Converter Tools")
     st.sidebar.markdown(f"Version: {VERSION}")
     st.sidebar.markdown(CONTACT_INFO)
+    st.sidebar.markdown(f"App Usage Count: {usage_counter}")  # Display usage counter
 
     uploaded_file = st.file_uploader("Upload File for Conversion", type=["pdf"])
 
